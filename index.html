@@ -1,0 +1,87 @@
+<!-- 
+    filename:index.html
+    author:Megha panchani
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Travel Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap stylesheets and scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-primary"> My Travel Blog </h1>
+    </header>
+ 
+        
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-4 bg-success">
+                    <h3>New Zealand</h3>
+                    <p> New Zealand is a stunning island country in the southwestern Pacific Ocean. Known for its breathtaking landscapes, it offers a mix of mountains, beaches, and unique wildlife.</p>
+                    <p>Places to visit: Queenstown, Fiordland National Park, Hobbiton</p>
+                </div>
+                <div class="col col-md-4 bg-danger">
+                    <h3>Japan</h3>
+                    <p> Japan is a beautiful country with a rich cultural heritage and modern attractions. Explore traditional temples, bustling cities, and serene gardens.</p>
+                    <p>Must-visit places: Tokyo, Kyoto, Osaka</p>
+                </div>
+                <div class="col col-md-4 bg-warning" data-toggle="modal" data-target="#modalColumn3">
+                    <h3>London</h3>
+                    <p>London, the capital of the United Kingdom, is a city that seamlessly blends rich history with modernity. With its iconic landmarks, diverse neighborhoods, and cultural treasures, London offers a vibrant and dynamic experience for visitors.</p>
+                    <p>Explore the regal Buckingham Palace, witness the historical significance of the Tower of London, and immerse yourself in the extensive collections of The British Museum. London's bustling streets are lined with a variety of restaurants, offering diverse cuisines to satisfy every palate.</p>
+                   
+                </div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="col-sm bg-light">
+                    <h3>South Korea</h3>
+                    <p> South Korea offers a mix of traditional and modern attractions. From historic palaces to high-tech cities, it's a destination that provides a unique cultural experience.</p>
+                    <p>Discover: Seoul, Jeju Island, Gyeongbokgung Palace</p>
+                </div>
+                <div class="col-md bg-info">
+                    <h3>Bora Bora</h3>
+                    <p> Bora Bora is a tropical paradise known for its turquoise lagoons and overwater bungalows. It's a dream destination for those seeking a romantic and serene getaway.</p>
+                    <p>Island Paradise: Mount Otemanu, Matira Beach, Bora Bora Lagoonarium</p>
+                </div>
+            </div>
+        </div>
+
+       
+    
+<div class="modal fade" id="modalColumn3" tabindex="-1" role="dialog" aria-labelledby="modalColumn3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalColumn3Label">London Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                For an unforgettable stay, indulge in luxurious hotels that capture the essence of the city's sophistication. Whether you're strolling through Hyde Park, taking in the views from the London Eye, or enjoying a West End show, London promises an immersive journey through time and culture.
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright 2023 | Megha Panchani</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

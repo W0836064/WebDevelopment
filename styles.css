@@ -1,0 +1,135 @@
+/********************
+filename:styles.css
+author:Megha panchani
+************************ */
+
+/***************
+ Header styling
+ ***************** */
+header {
+    text-align: center; 
+}
+
+header h1 {
+    color: #ff6b6b; 
+    margin-bottom: 20px; 
+}
+
+/*****************
+Heading 3 styling
+******************* */
+h3 {
+    color: #4caf50; 
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+/* **************
+ Column styling
+ ***************** */
+.col {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    text-align: center;
+}
+
+/* ***********************
+Small screen background color
+******************************** */
+@media (max-width: 576px) {
+    body {
+        background-color: #78c2ad;
+    }
+}
+
+/* ******************
+Medium screen background color
+********************************* */
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        background-color: #fab32e; 
+    }
+}
+
+/* ***********************
+Large screen background color
+********************************* */
+@media (min-width: 769px) {
+    body {
+        background-color: #ffbe76; 
+    }
+}
+
+/* ********************
+Modal styling
+********************** */
+.modal-content {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.modal-header {
+    background-color: #222; 
+    color: #fff;
+    border-bottom: 1px solid #444; 
+}
+
+.modal-title {
+    color: #fff; 
+}
+
+.modal-body {
+    padding: 20px; 
+}
+
+.modal-footer {
+    background-color: #222; 
+    border-top: 1px solid #444; 
+}
+
+.modal-footer button {
+    color: #fff; 
+    background-color: #4caf50; 
+    border: 1px solid #4caf50;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.modal-footer button:hover {
+    background-color: #45a049; 
+    border: 1px solid #45a049; 
+}
+
+/* *****************
+Footer styling
+********************* */
+footer {
+    margin-top: 50px;
+    text-align: center; /* Center align the text in the footer */
+}
+
+/**************************
+Table of content
+**************************
+
+1.Header styling
+2.Header3  styling
+3. Column styling
+4.Small screen background color
+5.Medium screen background color
+6.Large screen background color
+7.Modal styling
+8.Footer styling
+*/
+
+/* ***********************
+Color Guide
+**************************
+1.font color: red
+2.h3: Green
+3.model-header: white
+4.small bg:Greenish
+5.medium bg:yellowish 
+6. large bg:peach
+7.model: black
