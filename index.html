@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fictional Store Inventory">
+    <title>Fictional Store Inventory</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <!-- Header -->
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center text-info">Megha Panchani</h1>
+            </div>
+        </div>
+
+        <!-- Form for Small Devices -->
+        <div class="row d-block d-sm-none mt-4">
+            <div class="col">
+                <form id="mobileForm">
+                    <div class="mb-3">
+                        <label for="productNameMobile" class="form-label">Product Name</label>
+                        <select class="form-select"  id="productNameMobile" required>
+                            <option selected disabled>Select product...</option>
+                            <option value="1">MacBook</option>
+                            <option value="2">Ipad</option>
+                            <option value="3">Iphone 15</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-check-label text-info">Would you like to order?</label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="orderSwitchMobile">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantityRangeMobile" class="form-label text-info">Quantity</label>
+                        <input type="range" class="form-range" min="1" max="10" id="quantityRangeMobile">
+                    </div>
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Image -->
+        <div class="row mt-4">
+            <div class="col-lg-6 offset-lg-3">
+                <figure class="text-center">
+                    <img src="image1.jpg" alt="Product Image 1" class="img-fluid">
+                    <figcaption><li>MacBook: Experience the power of innovation with our latest MacBook.
+                         A sleek, lightweight design coupled with exceptional performance makes it your ideal companion for work and creativity.</li></figcaption>
+                    <img src="image2.jpg" alt="Product Image 2" class="img-fluid">
+                    <figcaption><li>iPad: Explore new possibilities with our advanced iPad.
+                         Its intuitive interface, stunning display, and powerful capabilities redefine what you can do on a tablet, whether it's for work, creativity, or leisure.</li></figcaption>
+                    <img src="image3.jpg" alt="Product Image 3" class="img-fluid">
+                    <figcaption><li>iPhone 15: Embrace the future of communication with the iPhone 15. Cutting-edge technology,
+                         enhanced features, and a seamless user experience redefine the way you connect and interact in the digital world.</li></figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="row mt-4  ">
+            <div class="col">
+                <table class="table table-striped text-info">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MacBook</td>
+                            <td>$1145</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Ipad</td>
+                            <td>$800</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Iphone 15</td>
+                            <td>$1800</td>
+                            <td>8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Form for Larger Devices -->
+        <div class="row d-none d-sm-block mt-4">
+            <div class="col-lg-6 offset-lg-3">
+                <form id="desktopForm">
+                    <div class="mb-3">
+                        <label for="productName" class="form-label text-info">Product Name</label>
+                        <select class="form-select" id="productName" required>
+                            <option selected disabled>Select product...</option>
+                            <option value="1">MacBook</option>
+                            <option value="2">Ipad</option>
+                            <option value="3">Iphone 15</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-check-label text-info">Would you like to order?</label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input text-info" type="checkbox" id="orderSwitch">
+                        </div>
+                    </div>
+
+                  <div class="mb-3">
+                    <label for="quantityRange" class="form-label text-info">Quantity</label>
+                    <input type="range" class="form-range" min="1" max="10" id="quantityRange">
+                    <output for="quantityRange" id="selectedQuantity" class="text-info">Selected quantity: 1</output>
+                </div>
+
+                <script>
+                    const quantityRange = document.getElementById('quantityRange');
+                    const selectedQuantity = document.getElementById('selectedQuantity');
+
+                    
+                    quantityRange.addEventListener('input', function() {
+                        selectedQuantity.textContent = `Selected quantity: ${this.value}`;
+                    });
+                </script>
+
+
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<footer class="row mt-5">
+    <div class="col text-center text-bg-info">
+        <p>&copy; 2023 Megha Panchani - Fictional Store Inventory</p>
+    </div>
+</footer>
+
+</html>
